@@ -401,6 +401,32 @@ public class Solution {
 
         }
 
+        public static void isNegativeOrPozitive() {
+        System.out.print("Введите число: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        if (a < 0 & a % 2 == 0) {
+            System.out.println("отрицательное четное число");
+        }
+        if (a < 0 & a % 2 != 0) {
+            System.out.println("отрицательное нечетное число");
+        }
+        if (a == 0) {System.out.println("ноль");}
+        if (a > 0 & a % 2 == 0){
+            System.out.println("положительное четное число");
+        }
+        if(a > 0 & a % 2 != 0) {
+            System.out.println("положительное нечетное число");
+        }
+        }
+
+        public static void DescriptionNumber() {
+
+        }
+
+
+
 }
 
 
