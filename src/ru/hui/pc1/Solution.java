@@ -422,7 +422,77 @@ public class Solution {
         }
 
         public static void DescriptionNumber() {
+        System.out.print("Введите число от 1 до 999: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
 
+        if (a % 2 == 0 & a >= 1 & a <= 999) {System.out.print("Чётное");
+        if (a <= 999 & a >= 100) {System.out.print(" трёхзначное число");}
+            else if (a <= 99 & a >= 10) {System.out.print(" двухзначное число");}
+                else if (a <= 9 & a >= 1) {System.out.print(" однозначное число");}}
+
+        if (a % 2 != 0 & a >= 1 & a <= 999) {System.out.print("Нечётное");
+         if (a <= 999 & a >= 100) {System.out.print(" трёхзначное число");}
+            else if (a <= 99 & a >= 10) {System.out.print(" двухзначное число");}
+                else if (a <= 9 & a >= 1) {System.out.print(" однозначное число");}}
+        }
+
+        public static void isPositive() {
+        System.out.print("Введите 3 числа: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        Scanner cc = new Scanner(System.in);
+        int b = cc.nextInt();
+        Scanner ss = new Scanner(System.in);
+        int c = ss.nextInt();
+        int count = 0;
+
+        if (a > 0) count++;
+        if (b > 0) count++;
+        if (c > 0) count++;
+
+        System.out.println(count);
+        }
+
+        public static void PositiveAndNegativeNumbers() {
+        System.out.print("Введите 3 числа: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        Scanner cc = new Scanner(System.in);
+        int b = cc.nextInt();
+        Scanner ss = new Scanner(System.in);
+        int c = ss.nextInt();
+        int COUNT_PLUS = 0;
+        int COUNT_MINUS = 0;
+
+        if (a > 0) COUNT_PLUS++;
+        if (b > 0) COUNT_PLUS++;
+        if (c > 0) COUNT_PLUS++;
+        if (a < 0) COUNT_MINUS++;
+        if (b < 0) COUNT_MINUS++;
+        if (c < 0) COUNT_MINUS++;
+
+
+        System.out.println("количество отрицательных чисел: " + COUNT_MINUS + "," + "количество положительных чисел: " + COUNT_PLUS);
+
+
+
+        }
+
+        public static void From1To10() {
+        int a = 0;
+        while (a < 10) {
+            a++;
+            System.out.println(a);
+        }
+        }
+
+        public static void From10To1() {
+        int a = 10;
+        while (a > 0) {
+            System.out.println(a);
+            a--;
+        }
         }
 
 
